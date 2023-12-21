@@ -57,7 +57,7 @@ class InscritoDetalles(APIView):
         return Response({'status': 'Eliminado con exito', 'message': 'Inscrito eliminado correctamente'})
     
 
-#Fuctions para el institucion
+#Function para el institucion
 
 @api_view(['GET', 'POST'])
 def InstitucionAPI(request):

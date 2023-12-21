@@ -56,8 +56,9 @@
 
 </head>
 <body>
-    <h1>Formulario de Inscrito</h1>
+    <div class="alert alert-info display-1 text-center"><alt="" width="100px"> Formulario Inscritos</div>
     <div id="mensaje-exito">Agregado con éxito</div>
+    
     <form id="formulario-inscrito" method="post" action="{% url 'inscrito_crear' %}">
         {% csrf_token %}
         <div class="form-group">
@@ -79,6 +80,9 @@
         <div class="form-group">
             <label for="{{ form.observacion.id_for_label }}">Observación:</label>
             {{ form.observacion }}
+        </div>
+        <div class="form-group">
+            Hora y fecha ingresadas de manera automatica
         </div>
         <button type="submit" class="btn btn-primary">Inscribir</button>
     </form>
